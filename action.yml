@@ -1,0 +1,25 @@
+# action.yml
+name: 'Forticlient VPN'
+description: 'Connect to Forticlient VPN using OpenConnect'
+inputs:
+  VPN_USER:
+    description: 'vpn user'
+    required: true
+  VPN_PWD:
+    description: 'vpn password'
+    required: true
+  VPN_HOST:
+    description: 'vpn host'
+    required: true
+  VPN_PORT:
+    description: 'vpn port'
+    required: true
+  VPN_SERVER_CERT:
+    description: 'vpn server certificate'
+    required: true
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
