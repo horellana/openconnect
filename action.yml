@@ -23,3 +23,6 @@ outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+              - name: Forticlient VPN
+                uses: horellana/openconnect@v1.0.1
+            
